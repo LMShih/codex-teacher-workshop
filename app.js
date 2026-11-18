@@ -18,4 +18,8 @@
  document.querySelectorAll('[data-check]').forEach(input=>{const key='codex-workshop-v01-'+input.dataset.check;try{input.checked=localStorage.getItem(key)==='true';}catch{}input.addEventListener('change',()=>{try{localStorage.setItem(key,String(input.checked));}catch{}});});
  const menu=document.querySelector('.menu-button'),nav=document.getElementById('navigation');menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.setAttribute('aria-expanded','false');nav.classList.remove('open');}));document.addEventListener('keydown',e=>{if(e.key==='Escape'){menu.setAttribute('aria-expanded','false');nav.classList.remove('open');}});
  const qr=document.createElement('img');qr.src='images/padlet-qr.png';qr.alt='Padlet 互動牆 QR Code';qr.width=170;qr.height=170;document.getElementById('padlet-qr').append(qr);
+ const projection=document.getElementById('workshop-qr-dialog');
+ document.querySelectorAll('[data-show-workshop-qr]').forEach(button=>button.addEventListener('click',()=>{projection.showModal();document.body.classList.add('qr-projection-open');}));
+ document.querySelector('[data-close-workshop-qr]').addEventListener('click',()=>projection.close());
+ projection.addEventListener('close',()=>document.body.classList.remove('qr-projection-open'));
 })();

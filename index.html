@@ -6,20 +6,24 @@
  <meta name="description" content="跨領域大學教師的兩小時 Codex 工作坊：Excel 分析、郵件與 LINE、網站製作、Skill 與遠端交辦。含教材下載、可複製操作指令及 Padlet 互動。">
  <meta name="color-scheme" content="light"><meta name="theme-color" content="#f7f7f2">
  <link rel="icon" href="data:,">
- <link rel="stylesheet" href="styles.css">
- <script defer src="content.js"></script><script defer src="app.js"></script>
+ <link rel="stylesheet" href="styles.css?v=03">
+ <script defer src="content.js"></script><script defer src="app.js?v=03"></script>
 </head>
 <body>
 <a class="skip" href="#main">跳至主要內容</a>
 <header class="header"><div class="header-inner">
  <a class="brand" href="#top">Codex 工作坊</a>
  <button class="menu-button" aria-expanded="false" aria-controls="navigation">選單<span aria-hidden="true">＋</span></button>
- <nav id="navigation" aria-label="主要導覽"><a href="#route">今日路線</a><a href="#practice">五個實作</a><a href="#downloads">教材下載</a><a href="#padlet">Padlet</a><a class="button small outline" href="#padlet">進入互動牆</a></nav>
+ <nav id="navigation" aria-label="主要導覽"><a href="#route">今日路線</a><a href="#practice">五個實作</a><a href="#downloads">教材下載</a><a href="#join">掃碼進入</a><a href="#padlet">Padlet</a><a class="button small outline" href="#padlet">進入互動牆</a></nav>
 </div></header>
 <main id="main">
  <section class="hero wrap" id="top">
-  <div class="hero-copy"><h1>用 Codex<br>解放你的雙手</h1><p class="lead">從資料分析、郵件與 LINE，<br class="mobile-break">到網站、Skill 與遠端交辦。</p><p class="meta">施倫閔老師 <span>2026.11.18</span><span>跨領域大學教師</span><span>120 分鐘</span></p><div class="actions"><a class="button" href="#route">開始工作坊</a><a class="button outline" href="#downloads">下載教材</a></div></div>
+  <div class="hero-copy"><h1>用 Codex<br>解放你的雙手</h1><p class="lead">從資料分析、郵件與 LINE，<br class="mobile-break">到網站、Skill 與遠端交辦。</p><p class="meta">施倫閔老師 <span>2026.11.18</span><span>跨領域大學教師</span><span>120 分鐘</span></p><div class="actions"><a class="button" href="#route">開始工作坊</a><a class="button outline" href="#downloads">下載教材</a><button class="button outline" type="button" data-show-workshop-qr>投影 QR Code</button></div></div>
   <div class="hero-list"><h2>今天，交辦五件事。</h2><ol><li><span>01</span><a href="#practice/excel">Excel → 文件與簡報</a></li><li><span>02</span><a href="#practice/messages">Gmail 與 LINE</a></li><li><span>03</span><a href="#practice/website">素材 → 公司網站</a></li><li><span>04</span><a href="#practice/skill">完整流程 → Skill</a></li><li><span>05</span><a href="#practice/remote">手機 → 遠端交辦</a></li></ol></div>
+ </section>
+ <section class="scan-section wrap" id="join" aria-labelledby="join-title">
+  <div class="scan-copy"><h2 id="join-title">掃描進入工作坊</h2><p>用手機掃描，下載教材、複製操作指令，並參與 Padlet 互動。</p><a class="scan-address" href="https://lmshih.github.io/codex-teacher-workshop/">https://lmshih.github.io/codex-teacher-workshop/</a><div class="actions"><button class="button" type="button" data-show-workshop-qr>放大 QR Code</button><a class="text-link" href="images/workshop-qr.png" download="工作坊網頁_QRCode.png">下載 QR Code</a></div></div>
+  <img class="workshop-qr" src="images/workshop-qr.png" width="1504" height="1504" alt="工作坊網頁 QR Code，掃描進入網頁下載教材與參與 Padlet 互動">
  </section>
  <section class="section wrap route" id="route"><h2>兩小時，走完一條工作路線</h2>
  <p class="section-intro">講師完整示範，學員依設備與帳號環境自由跟做。也可以從觀察與驗收參與。</p>
@@ -45,7 +49,7 @@
  <section class="section wrap" id="padlet"><div class="section-heading"><div><h2>把問題留下，讓大家一起看見</h2><p class="section-intro">下載教材、分享成果，也把卡住的地方留在 Padlet。</p></div><a class="text-link padlet-link" target="_blank" rel="noopener noreferrer">另開 Padlet <span aria-hidden="true">↗</span></a></div>
  <div class="padlet-intro"><p><strong>教材與操作</strong>在對應教材下留言。</p><p><strong>成果與交流</strong>分享畫面，或寫下觀察。</p><p><strong>問題與建議</strong>留下問題與下一步。</p></div>
  <div class="padlet-frame"><iframe id="padlet-embed" title="教師工作坊 Padlet 教材、成果與回饋互動牆" loading="lazy" allow="clipboard-write; camera; microphone" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
- <div class="padlet-footer"><p class="quiet">若嵌入區需要登入或無法開啟，請使用「另開 Padlet」。學員回應會出現在真實看板上。</p><details class="qr-details"><summary>用手機加入</summary><div id="padlet-qr"></div><a class="padlet-link text-link" target="_blank" rel="noopener noreferrer">開啟互動牆</a></details></div>
+ <div class="padlet-footer"><p class="quiet">若嵌入區需要登入或無法開啟，請使用「另開 Padlet」。學員回應會出現在真實看板上。</p><details class="qr-details"><summary>直接掃碼進入 Padlet</summary><div id="padlet-qr"></div><a class="padlet-link text-link" target="_blank" rel="noopener noreferrer">開啟互動牆</a></details></div>
  </section>
  <section class="closing-band" id="closing"><div class="section wrap"><h2>最後 8 分鐘，整理今天的問題與建議</h2><div class="closing-steps"><div><span>1 分鐘</span><h3>說明任務</h3><p>今天的回應，就是這次的素材。</p></div><div><span>2 分鐘</span><h3>補上留言</h3><p>還想問什麼？想先應用在哪裡？</p></div><div><span>2 分鐘</span><h3>Codex 整理</h3><p>看清讀取範圍，再看分類摘要。</p></div><div><span>3 分鐘</span><h3>核對與回應</h3><p>對照原文，回應兩個共通問題。</p></div></div>
  <div class="closing-prompt"><div><h3>現場整理指令</h3><p>整理主要問題、操作卡點與研習建議。保留來源，區分原意與後續建議。</p></div><button class="button" data-copy-closing>複製指令</button></div>
@@ -55,7 +59,11 @@
  </div></section>
  <section class="wrap sources"><h2>課後繼續練習</h2><p>先選一件你每週都在做的工作，備妥資料、交代成果，再親自驗收。</p><div class="source-links"><a href="https://learn.chatgpt.com/docs/quickstart" target="_blank" rel="noopener noreferrer">Codex 快速開始 ↗</a><a href="https://learn.chatgpt.com/docs/computer-use" target="_blank" rel="noopener noreferrer">Computer use ↗</a><a href="https://learn.chatgpt.com/docs/skills-and-plugins" target="_blank" rel="noopener noreferrer">Skills 與 Plugins ↗</a><a href="https://learn.chatgpt.com/docs/remote-connections" target="_blank" rel="noopener noreferrer">遠端連線 ↗</a><a href="https://learn.chatgpt.com/docs/dots/computers-and-apps" target="_blank" rel="noopener noreferrer">Dot 的電腦與 App ↗</a></div></section>
 </main>
-<footer class="footer wrap"><p>施倫閔老師・用 Codex 解放你的雙手</p><p>2026.11.18 · 工作坊教材 v02 · GitHub Pages</p></footer>
+<footer class="footer wrap"><p>施倫閔老師・用 Codex 解放你的雙手</p><p>2026.11.18 · 工作坊教材 v03 · GitHub Pages</p></footer>
+<dialog class="qr-projection" id="workshop-qr-dialog" aria-labelledby="projection-title" aria-describedby="projection-description">
+ <button class="button small outline qr-projection-close" type="button" data-close-workshop-qr autofocus>關閉放大</button>
+ <div class="qr-projection-content"><h2 id="projection-title">用 Codex 解放你的雙手</h2><p id="projection-description">掃描進入工作坊 · 下載教材 · 參與 Padlet 互動</p><img src="images/workshop-qr.png" width="1504" height="1504" alt="工作坊網頁 QR Code"><a href="https://lmshih.github.io/codex-teacher-workshop/">https://lmshih.github.io/codex-teacher-workshop/</a></div>
+</dialog>
 <div id="toast" role="status" aria-live="polite"></div>
 <noscript><p class="wrap">請開啟 JavaScript 使用實作切換與複製功能。教材仍可直接下載，全部指令也收錄在 TXT 檔。</p></noscript>
 </body></html>
